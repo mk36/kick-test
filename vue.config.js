@@ -1,5 +1,5 @@
 module.exports = {
-    publicPath: process.env.NODE_ENV === 'production' ? '/ratchetAndClank/' : '/',
+    publicPath: process.env.NODE_ENV === 'production' ? '/kick-test/' : '/',
     css: {
         loaderOptions: {
             sass: {
