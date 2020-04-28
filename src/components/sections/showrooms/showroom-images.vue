@@ -101,7 +101,7 @@
         </div>
 
         <div class="is-hidden-desktop showroom-carousel">
-            <carousel paginationColor="gray" paginationActiveColor="#0E4865" perPage="1">
+            <carousel paginationColor="gray" paginationActiveColor="#0E4865" :perPage="1">
                 <slide>
                     <img :src="getImgUrl('images/showroom-1.jpg')" alt="" class="showroom-carousel__img">
                 </slide>
