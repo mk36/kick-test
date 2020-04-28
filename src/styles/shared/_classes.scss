@@ -1,0 +1,35 @@
+// usually used for buttons
+.disabled{
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.full{
+  width: 100%;
+}
+
+.max-content-width{
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section-padding{
+  @include paddingBorderBox(25px);
+
+  @include desktop{
+    @include paddingBorderBox(25px 0);
+  }
+}
+
+.grey-background{
+  background-color: $grey-light;
+}
+
+hr.title-divider{
+  width: 100px;
+  margin: 20px 0;
+}
+
+body.navbar-fixed-top{
+  padding-top: $header-height;
+}
