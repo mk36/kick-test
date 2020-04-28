@@ -44,6 +44,7 @@
 
                         .first-nested-image{
                             @include paddingBorderBox(0 $image-padding 0 0);
+                            max-height: 50%;
                         }
 
                         img, &__nested{
@@ -51,8 +52,12 @@
                         }
 
                         &__nested{
-                            @include flex(100%, flex, center, center);
+                            @include flex(100%, flex, left, center);
                             flex-direction: column;
+
+                            img{
+                                max-height: 25%;
+                            }
 
                             img:nth-child(1){
                                 @include paddingBorderBox(0 0 $image-padding 0);

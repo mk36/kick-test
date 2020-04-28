@@ -10,6 +10,7 @@
 
         img{
             max-width: 60px;
+            cursor: pointer;
         }
 
         .mobile-menu-icon{
@@ -27,6 +28,10 @@
             color: $white;
             padding-right: 20px;
             cursor: pointer;
+
+            &:hover{
+                text-decoration: underline;
+            }
         }
     }
 
@@ -42,7 +47,7 @@
         <div class="max-head-foot-width full">
             <div class="site-header-columns">
                 <div class="column is-two-fifths-desktop site-header__logo">
-                    <img src="../../assets/logos/logo.png" alt="" class="site-header__logo">
+                    <img @click="scrollToSection('.site-banner')" src="../../assets/logos/logo.png" alt="" class="site-header__logo">
                     <i @click="mobileMenuOpen = true" class="fa fa-bars mobile-menu-icon is-hidden-desktop" aria-hidden="true"></i>
                 </div>
                 <div class="column is-hidden-touch">

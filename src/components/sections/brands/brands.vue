@@ -14,9 +14,13 @@
 
         img{
             flex-basis: 50%;
+            max-height: 50px;
+            max-width: 200px;
 
-            &:not(:last-child){
-                margin: 5px 0;
+            @include mobile-tablet{
+                &:not(:last-child){
+                    margin: 5px 0;
+                }
             }
         }
 

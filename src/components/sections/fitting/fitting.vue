@@ -9,6 +9,7 @@
             object-fit: cover;
 
             @include desktop{
+                max-width: 50%;
                 max-height: unset;
                 flex-basis: 50%;
                 @include paddingBorderBox(0 25px 0 0);
