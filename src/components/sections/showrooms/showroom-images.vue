@@ -62,12 +62,23 @@
                 }
             }
         }
+
+        .showroom-carousel{
+            img{
+                max-height: 200px;
+                object-fit: cover;
+            }
+
+            .VueCarousel-dot-container{
+                margin-top: 0 !important;
+            }
+        }
     }
 </style>
 
 <template>
     <section class="showroom-images-section section-padding">
-        <div class="max-content-width full">
+        <div class="max-content-width full is-hidden-touch">
             <section class="showroom-images">
                 <div class="showroom-images__row left-row">
                     <img :src="getImgUrl('images/showroom-1.jpg')" alt="" class="showroom-images__row__img">
@@ -88,12 +99,39 @@
                 </div>
             </section>
         </div>
+
+        <div class="is-hidden-desktop showroom-carousel">
+            <carousel paginationColor="gray" paginationActiveColor="#0E4865" perPage="1">
+                <slide>
+                    <img :src="getImgUrl('images/showroom-1.jpg')" alt="" class="showroom-carousel__img">
+                </slide>
+                <slide>
+                    <img :src="getImgUrl('images/showroom3.jpg')" alt="" class="showroom-carousel__img">
+                </slide>
+                <slide>
+                    <img :src="getImgUrl('images/showroom2.jpg')" alt="" class="showroom-carousel__img">
+                </slide>
+                <slide>
+                    <img :src="getImgUrl('images/showroom-4.jpg')" alt="" class="showroom-carousel__img">
+                </slide>
+                <slide>
+                    <img :src="getImgUrl('images/showroom_5.jpg')" alt="" class="showroom-carousel__img">
+                </slide>
+                <slide>
+                    <img :src="getImgUrl('images/showroom6.jpg')" alt="" class="showroom-carousel__img">
+                </slide>
+            </carousel>
+        </div>
     </section>
 </template>
 
 <script>
+    import { Carousel, Slide } from 'vue-carousel';
     export default {
-        components: {},
+        components: {
+            Carousel,
+            Slide
+        },
         props:[''],
         data: function(){
             return{
