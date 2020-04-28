@@ -5,13 +5,14 @@
 
         &__image{
             @include paddingBorderBox(0 0 25px 0);
+            max-height: 300px;
+            object-fit: cover;
 
             @include desktop{
+                max-height: unset;
                 flex-basis: 50%;
                 @include paddingBorderBox(0 25px 0 0);
             }
-
-            object-fit: cover;
         }
 
         &__text{
@@ -33,6 +34,10 @@
             display: flex;
             flex-wrap: wrap;
 
+            @include tablet-landscape{
+                padding-top: 25px !important;
+            }
+
             @include mobile-tablet{
                 padding: 0;
             }
@@ -52,7 +57,7 @@
 
                 <section class="fitting-section__text">
                     <div class="fitting-section__text__item">
-                        <h3 class="fitting-section__text__item__title">FITTING SERVICE</h3>
+                        <h3 class="fitting-section__text__item__title title-blue">FITTING SERVICE</h3>
 
                         <p>
                             To get the very best from your new kitchen, Chandlers can fi t  it for you too. We offer a dry fit installation service, which includes worktop fitting. By choosing us to install your kitchen we will fully project manage the installation, carried out by our experienced fitters. The work is not complete until the kitchen is signed off to your satisfaction.
@@ -64,7 +69,7 @@
                     </div>
 
                     <div class="fitting-section__text__item">
-                        <h3 class="fitting-section__text__item__title">A KITCHEN DESIGNED JUST FOR YOU</h3>
+                        <h3 class="fitting-section__text__item__title title-blue">A KITCHEN DESIGNED JUST FOR YOU</h3>
 
                         <p>
                             Using our designers will help you to get the absolute maximum from your space. Our experience and expertise enables us to not only see the simple ideas but come up with some innovative ones too. Whether we visit you on site or you visit the showroom, we have a full range of samples and offer a complete site measurement service also

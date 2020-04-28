@@ -1,7 +1,13 @@
 <style lang="scss">
 .design-service-option{
-    &:not(:last-child){
-        @include paddingBorderBox(0 0 15px 0);
+    @include mobile-tablet{
+        &:not(:last-child){
+            @include paddingBorderBox(0 0 15px 0);
+        }
+    }
+
+    @include tablet-landscape{
+        @include paddingBorderBox(0 15px 0 0 !important);
     }
 
     @include desktop{
@@ -11,6 +17,10 @@
     &__image{
         height: 175px;
         object-fit: cover;
+
+        @include tablet{
+            height: 250px;
+        }
     }
 
     &__title{
@@ -22,7 +32,7 @@
 <template>
     <section class="design-service-option">
         <img :src="getImgUrl(image)" alt="" class="design-service-option__image">
-        <h4 class="design-service-option__title">{{title}}</h4>
+        <h4 class="design-service-option__title title-blue">{{title}}</h4>
         <p class="design-service-option__text">{{text}}</p>
     </section>
 </template>

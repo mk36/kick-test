@@ -8,6 +8,11 @@
   width: 100%;
 }
 
+.max-head-foot-width{
+  max-width: 87.5%;
+  margin: auto;
+}
+
 .max-content-width{
   max-width: 1000px;
   margin: auto;
@@ -23,6 +28,10 @@
 
 .grey-background{
   background-color: $grey-light;
+}
+
+.title-blue{
+  color: $title-blue;
 }
 
 hr.title-divider{

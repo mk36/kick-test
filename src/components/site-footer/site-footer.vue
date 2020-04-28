@@ -56,7 +56,7 @@
 
 <template>
     <footer class="site-footer">
-        <div class="max-content-width full">
+        <div class="max-head-foot-width full">
             <section class="site-footer__details">
                 <p class="site-footer__details__contact">
                     0800 2100 458 <a href="mailto:enquiries@kitchens.biz">enquiries@kitchens.biz</a>

@@ -31,7 +31,7 @@
 <template>
     <section class="brands grey-background section-padding">
         <div class="max-content-width full">
-            <h3 class="brands__title">LEADING BRANDS IN STORE</h3>
+            <h3 class="brands__title title-blue">LEADING BRANDS IN STORE</h3>
 
             <div class="brands__images">
                 <img :src="getImgUrl('logos/new/quooker.png')" alt="logo">

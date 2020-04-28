@@ -16,7 +16,7 @@
 
 <template>
     <section class="site-banner">
-        <h2 class="site-banner__text">Our bespoke kitchens</h2>
+        <h2 class="site-banner__text title-blue">Our bespoke kitchens</h2>
     </section>
 </template>
 

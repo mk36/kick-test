@@ -19,8 +19,7 @@
     }
 
     &__navigation{
-        text-align: center;
-        @include flex(100%, flex, center, center);
+        @include flex(100%, flex, left, center);
 
         p{
             font-size: $small-nav-font;
@@ -40,7 +39,7 @@
 
 <template>
     <header class="site-header navbar is-fixed-top">
-        <div class="max-content-width full">
+        <div class="max-head-foot-width full">
             <div class="site-header-columns">
                 <div class="column is-two-fifths-desktop site-header__logo">
                     <img src="../../assets/logos/logo.png" alt="" class="site-header__logo">

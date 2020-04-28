@@ -10,6 +10,10 @@
         height: 175px;
         object-fit: cover;
         margin-bottom: -10px;
+
+        @include tablet{
+            height: 225px;
+        }
     }
 
     &__content{

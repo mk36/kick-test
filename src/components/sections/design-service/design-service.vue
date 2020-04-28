@@ -26,7 +26,7 @@
 <template>
     <section class="design-service section-padding">
         <div class="max-content-width full">
-            <h3 class="design-service__title">KITCHEN DESIGN SERVICE</h3>
+            <h3 class="design-service__title title-blue">KITCHEN DESIGN SERVICE</h3>
 
             <p class="design-service__text">
                 Buying a new kitchen can be a daunting task. There are many special offers and huge variations in price, quality and service.
